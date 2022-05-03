@@ -22,4 +22,7 @@ public class Portafolio_TransaccionController {
     public Portafolio_Transaccion getPortafolio_TransaccionById(@RequestParam (name = "id")Long id){
         return portafolio_transaccionService.getById(id);
     }
+
+
+
 }

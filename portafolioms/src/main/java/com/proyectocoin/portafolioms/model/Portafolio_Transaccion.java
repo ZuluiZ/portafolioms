@@ -8,7 +8,7 @@ public class Portafolio_Transaccion {
 
     @ManyToOne
     @JoinColumn(name="id_portafolio", nullable=false)
-    private Portafolio portafolios;
+    private Portafolio portafolio;
 
     @ManyToOne
     @JoinColumn(name="id_transaccion", nullable=false)
@@ -20,10 +20,12 @@ public class Portafolio_Transaccion {
     private Long id;
 
 
-    public Portafolio_Transaccion(Portafolio portafolio, Transaccion transaccion) {
+    public Portafolio_Transaccion(Portafolio portafolio, Transaccion transaccion, Long id) {
         this.portafolio = portafolio;
         this.transaccion = transaccion;
+        this.id = id;
     }
 
-
+    public Portafolio_Transaccion() {
+    }
 }

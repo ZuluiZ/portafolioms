@@ -12,6 +12,6 @@ import java.util.List;
 @Repository
 public interface IPortafolioRepository extends CrudRepository<Portafolio,Long> {
 
-    List<Portafolio> findByName(String Name);
+    List<Portafolio> findByNombre(String Nombre);
 
 }

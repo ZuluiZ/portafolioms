@@ -1,16 +1,16 @@
 create table public.tb_portafolio (
     id_portafolio serial primary key,
     nombre_portafolio varchar(32) NOT NULL,
-    balance_portafolio double NOT NULL
+    balance_portafolio Double NOT NULL
 )
 
 create table public.tb_transacciones (
     id_transaccion serial primary key,
     tipo_transaccion varchar(15) NOT NULL,
     id_moneda Long NOT NULL,
-    cantidad double NOT NULL,
+    cantidad Double NOT NULL,
     fecha_registro Date NOT NULL,
-    tarifa double NOT NULL,
+    tarifa Double NOT NULL,
     nota varchar(255) NOT NULL,
     extra varchar(15)
 )

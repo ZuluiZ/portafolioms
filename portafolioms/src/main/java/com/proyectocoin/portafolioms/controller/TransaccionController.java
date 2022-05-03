@@ -24,8 +24,8 @@ public class TransaccionController {
         return transaccionService.getById(id);
     }
 
-    @GetMapping
+    /*@GetMapping
     public Iterable<Transaccion> getAllTransaccionesById(@RequestParam(name = "id")Long id){
         return transaccionService.getAllById();
-    }
+    }*/
 }

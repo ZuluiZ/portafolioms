@@ -14,15 +14,15 @@ public class PortafolioService {
 
     public void crearPortafolio(Portafolio portafolio) {
 
-        List<Portafolio> portafoliosByName = portafolioRepository.findByName(portafolio.getNombre());
-        if (!portafoliosByName.isEmpty()){
+        List<Portafolio> portafoliosByNombre = portafolioRepository.findByNombre(portafolio.getNombre());
+        if (!portafoliosByNombre.isEmpty()){
             throw new RuntimeException("Ya hay un portafolio existente con ese nombre");
         }
 
         portafolioRepository.save(portafolio);
     }
 
-    public List<Portafolio> getByName(String Name){
-        return portafolioRepository.findByName(Name);
+    public List<Portafolio> getByName(String Nombre){
+        return portafolioRepository.findByNombre(Nombre);
     }
 }
