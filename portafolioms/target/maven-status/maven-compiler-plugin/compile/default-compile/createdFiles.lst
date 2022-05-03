@@ -1,1 +1,13 @@
+com\proyectocoin\portafolioms\model\Portafolio.class
+com\proyectocoin\portafolioms\service\TransaccionService.class
+com\proyectocoin\portafolioms\controller\TransaccionController.class
+com\proyectocoin\portafolioms\model\Portafolio_Transaccion.class
+com\proyectocoin\portafolioms\repository\IPortafolioRepository.class
 com\proyectocoin\portafolioms\PortafoliomsApplication.class
+com\proyectocoin\portafolioms\service\Portafolio_TransaccionService.class
+com\proyectocoin\portafolioms\repository\IPortafolio_TransaccionRepository.class
+com\proyectocoin\portafolioms\controller\PortafolioController.class
+com\proyectocoin\portafolioms\service\PortafolioService.class
+com\proyectocoin\portafolioms\controller\Portafolio_TransaccionController.class
+com\proyectocoin\portafolioms\repository\ITransaccionRepository.class
+com\proyectocoin\portafolioms\model\Transaccion.class

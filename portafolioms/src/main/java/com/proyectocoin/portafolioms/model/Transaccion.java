@@ -3,10 +3,14 @@ package com.proyectocoin.portafolioms.model;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.Set;
 
 @Entity
 @Table(name = "tb_transacciones")
 public class Transaccion implements Serializable {
+
+    @OneToMany(mappedBy="transaccion")
+    private Set<Portafolio_Transaccion> portafolio_transaccions;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

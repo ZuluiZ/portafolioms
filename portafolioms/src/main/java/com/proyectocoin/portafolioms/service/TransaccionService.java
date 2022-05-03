@@ -4,7 +4,6 @@ import com.proyectocoin.portafolioms.model.Portafolio;
 import com.proyectocoin.portafolioms.model.Transaccion;
 import com.proyectocoin.portafolioms.repository.IPortafolioRepository;
 import com.proyectocoin.portafolioms.repository.ITransaccionRepository;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
